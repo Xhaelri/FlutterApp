@@ -12,26 +12,36 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xffff0000),
-        leading: const Icon(Icons.menu),
-        title: const Text("Hello World"),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              print("Hello Ali");
-            },
-            icon: const Icon(Icons.star),
+    return Container(
+      color: Colors.teal,
+      child: Row(
+        children: [
+          Container(
+            width: 110,
+            color: Colors.red,
           ),
-          IconButton(
-            onPressed: () {
-              setState(() {
-                counter++;
-              });
-            },
-            icon: Text("$counter"),
+          Expanded(
+            child: Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.yellow,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.green,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            width: 110,
+            color: Colors.blue,
           ),
         ],
       ),
