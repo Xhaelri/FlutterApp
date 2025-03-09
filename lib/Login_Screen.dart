@@ -14,11 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
   bool isPassword = true;
 
   void submitForm() {
-    if (_formKey.currentState!.validate()) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text("Processing Login...")));
-    }
+    if (_formKey.currentState!.validate()) {}
   }
 
   @override
