@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/Messenger/Messenger_Home.dart';
+import 'package:untitled/BMI_Screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xff2681da)),
       ),
-      home: MessengerHome(),
+      home: BmiScreen(),
     );
   }
 }
